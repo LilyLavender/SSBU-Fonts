@@ -1,0 +1,170 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #000;
+  color: #dedede;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 1em auto 2em auto;
+  gap: 0.5em;
+  width: fit-content;
+  font-family: 'gp-rodin_ntlg_pro-ub';
+  font-size: larger;
+  text-transform: uppercase;
+  color: white;
+}
+
+header > img {
+  max-height: 100px;
+}
+
+#fonts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.font-sample-container {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background: black url(https://www.smashbros.com/assets_v2/img/common/ptn_diagonal_12.png);
+  background-size: 16px;
+}
+
+.font-sample {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.font-sample-container::after {
+  content: '';
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0.2) 75%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.font-left {
+  flex: 11;
+}
+
+.font-right {
+  flex: 13;
+  padding-left: 20px;
+}
+
+.font-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sample-text {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+pre {
+  background: #000;
+  color: #dedede;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: black 5px solid;
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+  font-family: 'df_hei_gb-w9';
+
+  transition: filter 200ms ease-in-out;
+}
+
+button.download-btn {
+  background: #000 url(https://www.smashbros.com/assets_v2/img/top/globalnav__btn_bg_sound_pc.png) 0px -25px;
+  background-size: 60px;
+}
+
+button.copy-btn {
+  background: #000 url(https://www.smashbros.com/assets_v2/img/top/globalnav__btn_bg_item_pc.png) 0px -25px;
+  background-size: 60px;
+}
+
+button:hover {
+  filter: grayscale(1.0) brightness(0.8);
+}
+
+
+/* ========== FONTS ========== */
+@font-face {
+  font-family: "add_font";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/add_font.otf") format("opentype");
+}
+@font-face {
+  font-family: "asia_kbigr";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/asia_kbigr.otf") format("opentype");
+}
+@font-face {
+  font-family: "asia_kgdu";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/asia_kgdu.otf") format("opentype");
+}
+@font-face {
+  font-family: "asia_kgespb";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/asia_kgespb.otf") format("opentype");
+}
+@font-face {
+  font-family: "df_hei_gb-w12";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/df_hei_gb-w12.otf") format("opentype");
+}
+@font-face {
+  font-family: "df_hei_gb-w9";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/df_hei_gb-w9.otf") format("opentype");
+}
+@font-face {
+  font-family: "dfpt_b9";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/dfpt_b9.otf") format("opentype");
+}
+@font-face {
+  font-family: "dfpt_bc";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/dfpt_bc.otf") format("opentype");
+}
+@font-face {
+  font-family: "fot-rodin_ntlg_pro-b";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/fot-rodin_ntlg_pro-b.otf") format("opentype");
+}
+@font-face {
+  font-family: "fot-rodin_ntlg_pro-eb";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/fot-rodin_ntlg_pro-eb.otf") format("opentype");
+}
+@font-face {
+  font-family: "fot-rodin_ntlg_pro-ub";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/fot-rodin_ntlg_pro-ub.otf") format("opentype");
+}
+@font-face {
+  font-family: "gp-rodin_ntlg_pro-b";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/gp-rodin_ntlg_pro-b.otf") format("opentype");
+}
+@font-face {
+  font-family: "gp-rodin_ntlg_pro-eb";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/gp-rodin_ntlg_pro-eb.otf") format("opentype");
+}
+@font-face {
+  font-family: "gp-rodin_ntlg_pro-ub";
+  src: url("https://lilylavender.github.io/SSBU-Fonts/gp-rodin_ntlg_pro-ub.otf") format("opentype");
+}
+/* ========== FONTS ========== */
